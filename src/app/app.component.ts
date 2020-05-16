@@ -18,7 +18,7 @@ export class AppComponent {
     {headerName: 'Email', field: 'email', sortable: true, filter: true, autoHeight: true, width: 300,suppressSizeToFit: false},
     {headerName: 'State', field: 'state', sortable: true, filter: true, autoHeight: true},
     {
-      headerName: 'Button Col 2',
+      headerName: 'Action',
       cellRenderer: 'buttonRenderer',
       cellRendererParams: {
         onEditClick: this.onEditBtnClick.bind(this),
