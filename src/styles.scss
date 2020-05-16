@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+.ag-theme-balham .ag-header-cell{
+    background-color: #2e2c2c;
+    color: white;
+}
+
+.ag-theme-balham .ag-icon-desc::before
+{
+    color: white;
+}
+
+.ag-theme-balham .ag-icon-asc::before
+{
+    color: white;
+}
+
+.ag-theme-balham .ag-icon-menu::before
+{
+    color: white;
+}
