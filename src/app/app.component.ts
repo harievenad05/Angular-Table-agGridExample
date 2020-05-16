@@ -15,14 +15,14 @@ export class AppComponent {
 
   columnDefs = [
     {headerName: 'Name', field: 'name', sortable: true, filter: true, autoHeight: true},
-    {headerName: 'Email', field: 'email', sortable: true, filter: true, autoHeight: true, width: 230,suppressSizeToFit: false},
+    {headerName: 'Email', field: 'email', sortable: true, filter: true, autoHeight: true, width: 300,suppressSizeToFit: false},
     {headerName: 'State', field: 'state', sortable: true, filter: true, autoHeight: true},
     {
       headerName: 'Button Col 2',
       cellRenderer: 'buttonRenderer',
       cellRendererParams: {
-        onClick: this.onBtnClick2.bind(this),
-        label: 'Click 2'
+        onEditClick: this.onEditBtnClick.bind(this),
+        onDeleteClick: this.onDeleteBtnClick.bind(this)
       },
       autoHeight: true
     },
@@ -60,12 +60,15 @@ export class AppComponent {
     
   }
 
-  onBtnClick2(e) {
+  onEditBtnClick(e) {
     this.rowDataClicked2 = e.rowData;
     console.log(e.rowData);
     alert(e.rowData.name)
   }
 
-  onG
+  onDeleteBtnClick(e){
+    this.rowDataClicked2 = e.rowData;
+    console.log(e.rowData);
+  }
 
 }
